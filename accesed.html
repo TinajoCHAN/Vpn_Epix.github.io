@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<script>
+    function typeEffect(element, speed) {
+        var text = $(element).text();
+        $(element).html('');
+
+        var i = 0;
+        var timer = setInterval(function() {
+            if (i < text.length) {
+                $(element).append(text.charAt(i));
+                i++;
+            } else {
+                clearInterval(timer);
+            }
+        }, speed);
+    }
+
+    $(document).ready(function() {
+        var speed = 75;
+        var delay = $('h1').text().length * speed + speed;
+        typeEffect($('h1'), speed);
+        setTimeout(function() {
+            $('p').css('display', 'inline-block');
+            typeEffect($('p'), speed);
+        }, delay);
+    });
+</script>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">VPN</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Log..</a></li>
+                <li>
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="glitch" data-text="VPN SECRET PLACE!">VPN SECRET PLACE!</h2>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/dance.gif" alt="Smiley face" class="anime" style="display:none">
+            </div>
+            <div class="col-md-4">
+                <div id="table">
+                    <div id="centeralign">
+                        <h1>Welcome to the Vpn/Secret Page</h1>
+                        
+                    </div>
+
+                    <audio id="my_audio">
+                        <source src="song.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div class="button" id="dank" onclick="playAudio()" type="button">
+                        <span class="button__mask"></span>
+                        <span class="button__text">Get STARTED!</span>
+                        <span class="button__text button__text--bis">Get STARTED!</span>
+                    </div>
+                    <div id="panel">
+
+
+                        <center>
+
+
+                            <h2>You can check this!</h2>
+                            <p>Check the following discord for possible updates on the vpn server
+                            online and offline status and much more!</p>
+                            
+                        </center>
+
+
+                    </div>
+
+                </center>
+            </div>
+            <div class="col-md-4">
+                <img src="img/dance.gif" alt="Smiley face" align="right" class="anime2" style="display:none">
+            </div>
+        </div>
+    </div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+
+
+</body>
+
+</html>
