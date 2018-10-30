@@ -1,6 +1,7 @@
 function playAudio() {
     console.log("dabn");
-    document.getElementById("my_audio").play();
+    audio.play(); 
+    
 }
 
 
@@ -25,3 +26,4 @@ $(document).ready(function () {
         $('.anime, .anime2').slideDown("slow").fadeIn("slow", function () {});
     });
 });
+
