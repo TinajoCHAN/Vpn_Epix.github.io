@@ -4,6 +4,8 @@ body{
     margin: 0;
   height: 100%;
 
+overflow-x: hidden;
+
   font-family: 'Oxygen Mono', monospace;
 }
 p {
@@ -560,7 +562,9 @@ input, textarea {
 
 canvas{width: 100%;
 position: absolute;
-height: 30%;
-top: 70%;
+height: 20%;
+top: 80%;
+    background-color: black;
+        
 }
 
