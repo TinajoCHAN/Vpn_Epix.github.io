@@ -1,7 +1,7 @@
 function playAudio() {
     console.log("dabn");
-    audio.play(); 
-    
+    audio.play();
+
 }
 
 
@@ -20,10 +20,15 @@ function log() {
 
 
 $(document).ready(function () {
-    $("#dank").click(function () {
-        $("#panel").slideDown("slow");
-        $("#dank").fadeOut("slow");
-        $('.anime, .anime2').slideDown("slow").fadeIn("slow", function () {});
-    });
+    
+        $("#dank").click(function () {
+            $("#panel").slideDown("slow");
+            $("#dank").fadeOut("slow");
+            $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+            if ($(window).width() >= 1024) {$('.anime, .anime2').slideDown("slow").fadeIn("slow", function () {});}
+        });
+    
 });
+
+
 
