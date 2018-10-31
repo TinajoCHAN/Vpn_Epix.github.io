@@ -579,9 +579,26 @@ position: fixed;
     }
 }
 .footer {
-   position: fixed;
+   position: absolute;
    left: 0;
    bottom: 0;
    width: 100%;
 }
-
+.block_the_shit{
+    background-color: black;
+    position: absolute;
+    top:58.%;
+    width: 510px;
+    z-index: 5;
+    height: 60px;
+    left;
+}
+.dabs{
+    position: static;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 80%;
+    height: 0;
+    overflow: hidden;
+}
