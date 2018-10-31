@@ -10,7 +10,7 @@ function log() {
     var y = document.getElementById("2").value;
     var z = y;
     var k = x;
-    if ((z == '77777' && k == 'javi77777') || (z == '2' && k == 'tobiasid')) {
+    if ((z == '77777' && k == 'javi77777') || (z == 'tinajochan.exe' && k == 'tobiasid')) {
         window.location.replace("accesed.html");
     } else {
 
