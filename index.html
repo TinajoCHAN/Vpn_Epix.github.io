@@ -53,6 +53,11 @@
             bar_height = -(fbc_array[i] / 2);
             //  fillRect( x, y, width, height ) // Explanation of the parameters below
             ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+            
+                document.getElementById('image_dancing2').height = 640 + (fbc_array[60])/2;
+                document.getElementById('img_dancing').height = 640 + (fbc_array[60])/2;
+                document.getElementById('img_dancing').width =360+ (fbc_array[60])/2;
+                document.getElementById('image_dancing2').width =360+ (fbc_array[60])/2;
         }
     }
 
@@ -87,7 +92,9 @@
 
 <body>
 
-
+  <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
         <div id="audio_box"></div>
         
         <nav class="navbar navbar-inverse">
@@ -134,7 +141,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="img/dance.gif" alt="Smiley face" class="anime" style="display:none; transform: rotate(55deg);">
+                    <img src="img/dance.gif" alt="Smiley face" class="anime" id='img_dancing' style="display:none; transform: rotate(55deg);">
                 </div>
                 <div class="col-md-4 ">
                     <div id="table">
@@ -192,14 +199,12 @@
                     </center>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/dance.gif" alt="Smiley face" align="right" class="anime2" style="display:none; transform: rotate(240deg);">
+                    <img src="img/dance.gif" alt="Smiley face" align="right" class="anime2" id='image_dancing2' style="display:none; transform: rotate(240deg);">
                 </div>
             </div>
         </div>
     
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
+      
     <div class="footer">
   <canvas id="analyser_render"></canvas>
         <canvas></canvas>
